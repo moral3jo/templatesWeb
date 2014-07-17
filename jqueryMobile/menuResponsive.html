@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Titulo</title>
+	<link rel="stylesheet" href="jquery/jquery.mobile-1.4.3.min.css">
+	<link rel="stylesheet" href="css/menuResponsive.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="jquery/jquery-1.11.1.min.js"></script>
+	<script src="js/menuResponsive.js"></script>
+	<script src="jquery/jquery.mobile-1.4.3.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
+
+	<div data-role="header" class="jqm-header" >
+		<h1>Titulo</h1>
+		<a href="#" id="btnMenu"   class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars   ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#" id="btnBuscar" class="jqm-search-link  ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Buscar</a>
+	</div><!-- /header -->
+	
+    <div role="main" class="ui-content jqm-content">
+		<h2>Titulo Apartado</h2>
+		<p>Contiene menu izquierdo responsive y derecho siempre plegado</p>
+		<p>El menu izquierdo contine listado con elementos desplegables</p>
+	</div><!-- /content -->
+	    
+	<div data-role="panel" id="navmenuleft" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+			<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Inicio</a></li>
+			<li data-filtertext="introduction overview getting started"><a href="../intro/" data-ajax="false">Primera</a></li>
+			<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+				<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+					<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">Segunda<span class="ui-collapsible-heading-status"> click to expand contents</span></a>
+				</h3>
+				<div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+					<ul>
+						<li data-filtertext="form checkboxradio widget checkbox input checkboxes controlgroups"><a href="../checkboxradio-checkbox/" data-ajax="false">SegUno</a></li>
+						<li data-filtertext="form checkboxradio widget radio input radio buttons controlgroups"><a href="../checkboxradio-radio/" data-ajax="false">SegDos</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div><!-- /panel -->
+
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+		<p>Pie de pagina - v0.1</p>
+	</div><!-- /footer -->
+	
+    <div data-role="panel" id="navmenuright" class="jqm-navright-panel" data-position="right" data-display="overlay" data-theme="a">
+		<h2>Panel de busqueda</h2>
+		<p>Panel de busqueda</p>
+	</div>
+
+
+</div><!-- /page -->
+</body>
+</html>
